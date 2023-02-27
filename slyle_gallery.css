@@ -1,0 +1,19 @@
+body{margin: 10px}
+.photo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  
+
+}
+.photo img{
+    max-width: 15%;
+    margin: 5px;
+}
+.photo img:hover{
+   transform: scale(2,2);
+    border:2px solid rgb(240, 178, 79);
+    transition: 1s ease-out;
+   
+
+}

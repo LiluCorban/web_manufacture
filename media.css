@@ -1,0 +1,67 @@
+@media (max-width: 940px) {
+  .wrapper header {
+    height: 150px;
+  }
+  .wrapper .container h1 {
+    font-size: 30px;
+  }
+  /* .wrapper .container div.main-info {
+    margin-top: 20%;
+  } */
+  .wrapper .container h2 {
+    font-size: 20px;
+  }
+  /* .wrapper .container #btn-more {
+    margin-left: 39%;
+  } */
+  .wrapper header nav.big {
+    display: none;
+  }
+  .wrapper header nav.small {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .wrapper header nav.small div.small-bar {
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper header nav.small div.small-bar a {
+    text-decoration: none;
+    color: white;
+  }
+  .wrapper header nav.small div.small-bar a:hover {
+    color: rgb(240, 178, 79);
+  }
+  .wrapper footer div.contact {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 5%;
+  }
+  .wrapper footer div.contact div {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .wrapper footer div.contact a {
+    margin-top: 15%;
+  }
+  .wrapper footer div.footer-logo {
+    justify-content: start;
+  }
+  main section.about-us .first-block {
+    flex-wrap: wrap;
+  }
+  main section.about-us .second-block {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  main section.about-us .img-press {
+    height: 400px;
+  }
+}

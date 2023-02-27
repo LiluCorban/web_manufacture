@@ -1,0 +1,382 @@
+body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   
+}
+/* первая страница */
+.wrapper header {
+    width: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 1030;
+   height: 100px;
+    backdrop-filter: blur(10px);
+
+}
+.wrapper header.ground{
+    background-color: black;
+}
+.wrapper header nav.big {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    padding-left: 5%;
+    padding-right: 5%;
+  
+}
+
+.wrapper header nav.big  a{
+    width: 10%;
+    padding: 10px;
+    margin:1% 1% 0 1%;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+   font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.wrapper header nav a:hover{
+    color: rgb(240, 178, 79);
+
+}
+.wrapper header nav #logo{
+    width: 20%;
+}
+.wrapper header nav #logo img{
+    width: 70%;
+    margin-left: 50px;
+}
+.wrapper header  #a-logo{
+    margin: 0;
+    padding: 0;
+    font-size: 0px;
+}
+
+.wrapper header nav.small{
+    display: none;
+}
+
+.wrapper .container {
+    background: url("img/fon11.jpeg") no-repeat center center;
+     height: 720px;
+     position: relative;
+}
+.wrapper .container div.main-info{
+  
+    position: absolute;
+    width: 100%;
+    backdrop-filter: blur(5px);
+  
+        top: 20%;
+
+}
+
+
+
+.wrapper .container h1{
+    text-align: center;
+    color: rgb(240, 178, 79);
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 5px;
+    text-decoration: underline;
+}
+.wrapper .container h2{
+    margin-left: 35%;
+    margin-top: 1%;
+    color: white;
+    width: 30%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+  
+}
+.wrapper .container #container-logo {
+    margin-left: 40%;
+    width: 20%;
+}
+
+
+
+/* .wrapper .container #btn-more{
+background-color: transparent;
+color: white;
+font-size: 15px;
+font-family: 'Courier New', Courier, monospace;
+font-weight: 500;
+border:1px solid rgb(240, 178, 79);
+padding: 10px 30px 10px 30px;
+margin-left: 45%;
+letter-spacing: 2px;
+margin-bottom: 1%;
+
+
+} */
+/* .wrapper .container #btn-more:hover {
+    color: rgb(240, 178, 79);
+    cursor: pointer;
+} */
+
+.wrapper .container .social {
+    position: absolute;
+    top:90%;
+    left: 2%;
+    /* margin-top: 5%;
+    margin-left:5%; */
+    /* display: flex;
+    justify-content: space-between; */
+    
+}
+.wrapper .container .social a{
+
+    text-decoration: none;
+    color: white;
+}
+    .wrapper .container .social a img{
+    width: 40px;
+
+}
+
+/* Главное */
+
+main {
+    padding-top: 2%;
+}
+/* о нас */
+main .about-us{
+    display: flex;
+    flex-direction: column;
+    
+}
+main section {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+main section.about-us .first-block{
+    display: flex;
+    gap: 5%;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    
+}
+main section.about-us h2{
+    font-size: 40px;
+    /* text-align: center; */
+}
+main  .line-1{
+width: 15%;
+
+}
+main section.about-us h3{
+    font-size: 30px;
+    width: 40%;
+    text-align: center;
+}
+
+main  section.about-us .img-press {
+    max-width: 50%;
+    height: 500px;
+
+}
+main  section.about-us ul{
+    list-style-type: circle;
+    color: rgb(240, 178, 79);
+   
+}
+main  section.about-us ul li {
+    color: black;
+}
+
+main .about-us .second-block{
+    display: flex;
+    justify-content: space-around;
+}
+main .about-us .second-block img.logo-second-block{
+    width: 5%;
+    height: 5%;
+
+}
+
+
+
+main .about-us .second-block .img3{
+    margin-top: 2%;
+    width: 50%;
+}
+main .about-us .third-block{
+    display: flex;
+   flex-direction: column;
+}
+main .about-us .third-block .line-2{
+    width: 15%;
+}
+
+
+/* ассортимент */
+.wrapper section.assortment {
+    margin-top: 5%;
+
+}
+.wrapper section.assortment h2{
+    font-size: 40px;
+    /* text-align: center; */
+}
+.wrapper section.assortment div.assort{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.wrapper section.assortment div.assort div{
+    width: 20%;
+    border: 1px solid rgb(240, 178, 79);
+    /* padding: 2px; */
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    transform: scale(1, 1);
+    transition: 0.5s ease-in-out;
+}
+.wrapper section.assortment div.assort img{
+    width: 100%;
+}
+.wrapper section.assortment div.assort div p{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+   
+}
+.wrapper section.assortment div.assort div:hover{
+    transform: scale(1.2, 1.2);
+    background-color: rgb(240, 178, 79);
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 20px;
+    /* width: 30%; */
+   
+   
+
+}
+/* manufacture */
+.wrapper main section.manufacture video.video{
+    width: 100%;
+    height: 500px;
+}
+/* gallery */
+.wrapper main section.gallery div.photo{
+    display: flex;
+
+  
+
+}
+.wrapper main section.gallery div.photo img{
+
+    max-width:20% ;
+    margin: 5px;
+}
+.wrapper main section.gallery div.photo img:hover{
+  transform: scale(1.5,1.5);
+  transition: 0.5s ease-out;
+  border: 2px solid rgb(240, 178, 79) ;
+    /* margin: 10px; */
+}
+.wrapper main section.gallery a#see-more{
+   
+    color: rgb(240, 178, 79);
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px;
+}
+.wrapper main section.gallery a#see-more:hover{
+    color: black;
+    text-decoration: none;
+  
+}
+
+
+/* footer */
+.wrapper footer{
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: black;
+    color: rgb(240, 178, 79);
+    padding-bottom: 5%;
+}
+.wrapper footer div.footer-logo{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    align-items: center;
+
+}
+.wrapper footer div.footer-logo img{
+    width: 180px;
+}
+.wrapper footer div.frame{
+    border: 5px solid rgb(240, 178, 79);
+    box-sizing: border-box;
+
+}
+.wrapper footer iframe {
+   width: 100%;
+   height: 200px;
+   border-width: 0;
+ 
+   
+   
+}
+.wrapper footer div.contact {
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+   
+    margin: 10px 10px 10px 80px;
+}
+
+.wrapper footer div.contact img {
+   
+    height: 180px;
+    margin-top: 10%;
+    
+}
+.wrapper footer div.contact div{
+    width: 30%;
+    padding: 10px;
+    border: 1px solid rgb(240, 178, 79);
+}
+.wrapper footer div.contact div.social{
+
+    display: flex;
+    flex-direction: column;
+   
+   
+}
+.wrapper footer div.contact  a{
+    text-decoration: none;
+    color: rgb(240, 178, 79);
+   margin-top: 25%;
+   margin-left: 5%;
+}
+.wrapper footer div.contact div.social div{
+    display: flex;
+    justify-content: flex-start;
+    gap: 2%;
+    border: none;
+   
+}
+.wrapper footer div.contact img.media{
+
+    height: 50px;
+}
+
