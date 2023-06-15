@@ -104,36 +104,11 @@ body{
     margin-left: 40%;
     width: 20%;
 }
-
-
-
-/* .wrapper .container #btn-more{
-background-color: transparent;
-color: white;
-font-size: 15px;
-font-family: 'Courier New', Courier, monospace;
-font-weight: 500;
-border:1px solid rgb(240, 178, 79);
-padding: 10px 30px 10px 30px;
-margin-left: 45%;
-letter-spacing: 2px;
-margin-bottom: 1%;
-
-
-} */
-/* .wrapper .container #btn-more:hover {
-    color: rgb(240, 178, 79);
-    cursor: pointer;
-} */
-
 .wrapper .container .social {
     position: absolute;
     top:90%;
     left: 2%;
-    /* margin-top: 5%;
-    margin-left:5%; */
-    /* display: flex;
-    justify-content: space-between; */
+ 
     
 }
 .wrapper .container .social a{
@@ -145,6 +120,7 @@ margin-bottom: 1%;
     width: 40px;
 
 }
+
 
 /* Главное */
 
@@ -165,12 +141,12 @@ main section.about-us .first-block{
     display: flex;
     gap: 5%;
     justify-content: space-around;
-    /* flex-wrap: wrap; */
+   
     
 }
 main section.about-us h2{
     font-size: 40px;
-    /* text-align: center; */
+    
 }
 main  .line-1{
 width: 15%;
@@ -228,7 +204,7 @@ main .about-us .third-block .line-2{
 }
 .wrapper section.assortment h2{
     font-size: 40px;
-    /* text-align: center; */
+
 }
 .wrapper section.assortment div.assort{
     width: 100%;
@@ -238,14 +214,13 @@ main .about-us .third-block .line-2{
     flex-wrap: wrap;
 
 }
+
 .wrapper section.assortment div.assort div{
     width: 20%;
     border: 1px solid rgb(240, 178, 79);
-    /* padding: 2px; */
     margin: 2px;
     display: flex;
     flex-direction: column;
-    transform: scale(1, 1);
     transition: 0.5s ease-in-out;
 }
 .wrapper section.assortment div.assort img{
@@ -258,14 +233,11 @@ main .about-us .third-block .line-2{
    
 }
 .wrapper section.assortment div.assort div:hover{
-    transform: scale(1.2, 1.2);
+    transform: scale(1.3);
     background-color: rgb(240, 178, 79);
     text-transform: uppercase;
     cursor: pointer;
-    margin: 20px;
-    /* width: 30%; */
-   
-   
+  
 
 }
 /* manufacture */
@@ -277,19 +249,16 @@ main .about-us .third-block .line-2{
 .wrapper main section.gallery div.photo{
     display: flex;
 
-  
-
 }
 .wrapper main section.gallery div.photo img{
-
     max-width:20% ;
     margin: 5px;
+    transition: 0.5s ease-out;
 }
 .wrapper main section.gallery div.photo img:hover{
-  transform: scale(1.5,1.5);
-  transition: 0.5s ease-out;
-  border: 2px solid rgb(240, 178, 79) ;
-    /* margin: 10px; */
+  transform: scale(1.5);
+   border: 2px solid rgb(240, 178, 79) ;
+
 }
 .wrapper main section.gallery a#see-more{
    
